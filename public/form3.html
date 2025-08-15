@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form tag</title>
+    </head>
+    <body>
+
+        <form method="get">
+            Name : <input type="text" name="username" value="EPL"      readonly>
+           <br><br>
+
+           College : <input type="text" name="collegename" value="nacscs"     disabled>
+           <br><br>
+
+           Email : <input type="email" name="email"    autofocus>
+           <br><br>
+
+           Password : <input type="password" name="password"   
+                pattern="[0-9]{4,8}"   required 
+                                           minlength="5"      maxlength="7">
+           <br><br>
+
+           Phone : <input type="tel" name="phone"     size="10">
+           <br><br>
+
+            <button color="gray">Submit</button>
+        </form>
+    </body>
+</html>

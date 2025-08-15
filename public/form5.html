@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    <style>
+        ul{
+            list-style: none;
+            border:2px solid;
+            padding:5px;
+            height:100px;
+            width:140px;
+            overflow: auto;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>Student Regestration</h2>
+        <form>
+            <dl>
+                <dt>File</dt>
+                <dd>
+                    <input type="file" name="file" multiple accept=".jpeg">
+                </dd>
+                <dt>Colors</dt>
+                <dd>
+                    <input type="color" name="color" value="0ff0000">
+                </dd>
+                <dt>Radio</dt>
+                <dd>
+                    <input type="radio" name="radio">BCS
+                    <input type="radio" name="radio">BCA
+                </dd>
+                <dt>Stream</dt>
+                <dd>
+                    <input type="radio" name="check">Science
+                    <input type="radio" name="check">Arts
+                    <input type="radio" name="check">Commerce
+                </dd>
+                <dt>Checkbox</dt>
+                <dd>
+                    <input type="checkbox" name="box" value="C Language">C Language
+                    <input type="checkbox" name="box" value="java language">java Language
+                    <input type="checkbox" name="box" value="python language">python Language
+                    <input type="checkbox" name="box" value="cpp language">cpp Language
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>select Cource</dt>
+                <dd>
+                <ul>
+                    <li> <input type="checkbox" name="cource" value="C Language"> C Language</li>
+                    <li> <input type="checkbox" name="cource" value="CPP Language"> CPP Language</li>
+                    <li> <input type="checkbox" name="cource" value="Python Language"> Python Language</li>
+                    <li> <input type="checkbox" name="cource" value="java language"> java Language</li>
+                    <li> <input type="checkbox" name="cource" value="html">html</li>
+                    <li> <input type="checkbox" name="cource" value="css"> css</li>
+                    <li> <input type="checkbox" name="cource" value="js"> js</li>
+                </ul>
+                </dd>
+            </dl>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
