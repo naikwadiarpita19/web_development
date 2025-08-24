@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>meta characters</title>
+    </head>
+    <body>
+        
+        <form>
+
+<!-- \d - it is used as escape sequence of character & it specifies only decimal(0-9) value -->
+    <!-- \d - for any single  digit -->
+                1)   &nbsp;     \d   &nbsp;= &nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\d">
+            <button>    Submit  </button>
+            <br>
+            <br>
+            
+<!--\d\d- for 2 digit ,  \d\d\d - for 3 digit   ,     \d\d\d\d - for 4 digit  , ..... n gigit -->
+
+    <!-- \D - specifies non decimal(a-z,A-Z,0-9, special character) value -->
+              2)   &nbsp;     \D   &nbsp;= &nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\D">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!--\w -  specifies alpha(a-z,A-Z) numeric(0-9) with underscore(_) only  -->
+            3)   &nbsp;     \w   &nbsp;= &nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\w">
+            <button>    Submit  </button>
+            <br>
+            <br>
+    <!-- \W - it specifies only special character not a alpha numeric value -->
+            4)   &nbsp;     \W   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\W">
+            <button>    Submit  </button>
+            <br>
+            <br>
+    <!-- \s - it refers space in between two value -->
+            5)   &nbsp;     \s   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\d \s \d">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- \i - ignore condition (allow a-z,A-Z,0-9,special cgaracters) -->
+            6)   &nbsp;     \i   &nbsp;= &nbsp;   Name : 
+            <input type="text"   name="name"     pattern="\i">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+            <!--  alpha characters write in [] -->
+
+    <!-- [a-z] - allow lower-case alphabet -->
+            7)   &nbsp;     [a-z]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a-z]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [A-Z] - allow upper-case alphabet -->
+            8)   &nbsp;     [A-Z]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[A-Z]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [a-z , A-Z] / [A-Z , a-z] / [a-Z] - allow lower & upper case alphabet -->
+            9)   &nbsp;     [a-Z]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a-Z]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [a,b,c] - only print a,b,c not other character , decimal value , or any special character  -->
+            10)   &nbsp;     [a,b,c]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a,b,c]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [a-d,f-j] - only print character in between a to d and  f to j -->
+            11)   &nbsp;     [a-d,f-j]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a-d,f-j]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [^a,b,c] - print character d to z excluding a,b,c -->
+            12)   &nbsp;     [^a,b,c]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[^a,b,c]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [^a-d,f-j] - print character e and k to z excluding character in between a-d, f-j -->
+            13)   &nbsp;     [^a-d,f-j]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[^a-d,f-j]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [0-9] - only decimal value -->
+            14)   &nbsp;     [0-9]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[0-9]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [a-zA-Z0-9] - allow alpha numeric -->
+            15)   &nbsp;     [a-zA-z0-9]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a-zA-Z0-9]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+    <!-- [a-zA-Z0-9_] - allow alpha numeric value with underscore -->
+            16)   &nbsp;     [a-zA-z0-9_]   &nbsp; =&nbsp;   Name : 
+            <input type="text"   name="name"     pattern="[a-zA-Z0-9_]">
+            <button>    Submit  </button>
+            <br>
+            <br>
+
+
+<!-- \^ - start with -->
+ <!-- \$ - ends with -->
+  <!-- () - union off characters  -->
+
+
+         </form>
+
+    </body>
+</html>
